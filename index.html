@@ -8,7 +8,7 @@
   
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
@@ -49,7 +49,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Ambient Blueprint & Financial Grid Pattern */
     .blueprint-bg {
       background-image: 
         radial-gradient(circle at 100% 0%, rgba(217, 119, 54, 0.09) 0%, transparent 40%),
@@ -60,7 +59,6 @@
       background-position: 0 0, 0 0, -1px -1px, -1px -1px;
     }
 
-    /* Header & Navigation */
     header {
       position: fixed;
       top: 0;
@@ -189,7 +187,6 @@
       position: relative;
     }
 
-    /* Hero Section */
     .hero {
       padding-top: calc(var(--nav-height) + 70px);
       padding-bottom: 90px;
@@ -298,7 +295,6 @@
       border-color: rgba(255, 255, 255, 0.2);
     }
 
-    /* Technical Card */
     .hero-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
@@ -379,7 +375,6 @@
       letter-spacing: 0.8px;
     }
 
-    /* Headings */
     .section-head {
       text-align: center;
       max-width: 820px;
@@ -409,7 +404,6 @@
       font-size: 1.05rem;
     }
 
-    /* Philosophy Banner */
     .philosophy-banner {
       background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
       border: 1px solid var(--border-highlight);
@@ -437,7 +431,6 @@
       max-width: 950px;
     }
 
-    /* 4-Stage Architecture Grid */
     .framework-section {
       background: rgba(15, 23, 42, 0.4);
       border-top: 1px solid var(--border-subtle);
@@ -490,7 +483,6 @@
       line-height: 1.55;
     }
 
-    /* Economic Showcase */
     .economic-showcase {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -521,7 +513,6 @@
       height: 190px;
     }
 
-    /* Capabilities */
     .capabilities-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -604,7 +595,40 @@
       border-color: rgba(229, 169, 60, 0.3);
     }
 
-    /* Territories */
+    .foundry-photo-box {
+      margin: 16px 0 20px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(217, 119, 54, 0.35);
+      position: relative;
+      background: #090D14;
+    }
+
+    .foundry-photo-box img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .foundry-photo-box:hover img {
+      transform: scale(1.03);
+    }
+
+    .foundry-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(9, 13, 20, 0.95) 100%);
+      padding: 10px 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent-copper);
+      letter-spacing: 0.5px;
+    }
+
     .territory-section {
       background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.9) 0%, var(--bg-dark) 100%);
       border-top: 1px solid var(--border-subtle);
@@ -652,7 +676,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Contact */
     .contact-container {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
@@ -747,7 +770,6 @@
       min-height: 120px;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid var(--border-subtle);
       background: #06090E;
@@ -765,7 +787,6 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Mobile */
     @media (max-width: 992px) {
       .hero-grid, .contact-container, .capabilities-grid, .economic-showcase {
         grid-template-columns: 1fr;
@@ -872,7 +893,6 @@
           <span>CY-HE-326717</span>
         </div>
 
-        <!-- SVG Technical Engineering Diagram -->
         <div class="engineering-visual">
           <svg viewBox="0 0 400 120" width="100%" height="100%" preserveAspectRatio="none">
             <defs>
@@ -890,9 +910,9 @@
             <circle cx="10" cy="105" r="4" fill="#38BDF8"/>
             <circle cx="190" cy="55" r="4" fill="#D97736"/>
             <circle cx="390" cy="20" r="5" fill="#10B981"/>
-            <text x="25" y="102" fill="#64748B" font-size="9" font-family="JetBrains Mono" id="svg-t1">R&D PARAMETERS</text>
-            <text x="180" y="42" fill="#D97736" font-size="9" font-family="JetBrains Mono" id="svg-t2">MARKET RETENTION</text>
-            <text x="300" y="18" fill="#10B981" font-size="9" font-family="JetBrains Mono" id="svg-t3">SUSTAINED YIELD</text>
+            <text x="25" y="102" fill="#64748B" font-size="9" font-family="JetBrains Mono" id="svg-t1">ΠΑΡΑΜΕΤΡΟΙ R&D</text>
+            <text x="180" y="42" fill="#D97736" font-size="9" font-family="JetBrains Mono" id="svg-t2">ΔΙΑΤΗΡΗΣΙΜΟΤΗΤΑ ΑΓΟΡΑΣ</text>
+            <text x="300" y="18" fill="#10B981" font-size="9" font-family="JetBrains Mono" id="svg-t3">ΣΤΑΘΕΡΗ ΑΠΟΔΟΣΗ</text>
           </svg>
         </div>
 
@@ -1025,7 +1045,7 @@
           </div>
         </div>
 
-        <!-- 2: Foundry & Industrial Heritage -->
+        <!-- 2: Foundry & Industrial Heritage with Photo -->
         <div class="cap-card">
           <div class="cap-header">
             <div class="cap-icon"><i class="fa-solid fa-fire-burner"></i></div>
@@ -1034,6 +1054,15 @@
               <p class="cap-desc" data-i18n="c2_desc">Ιστορική τεχνογνωσία και δεσμοί με κορυφαίες ιταλικές βιομηχανίες κατεργασίας χαλκού, τόρνευσης, ειδικών νεοτροχορίων και ορειχάλκου.</p>
             </div>
           </div>
+
+          <!-- Featured Swarf / Alloy Photo Box -->
+          <div class="foundry-photo-box">
+            <img src="brass-swarf.jpg" alt="Brass machining chips and industrial swarf" onerror="this.src='https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80'" />
+            <div class="foundry-photo-caption" data-i18n="img_caption">
+              // ΚΑΤΕΡΓΑΣΙΑ ΟΡΕΙΧΑΛΚΟΥ & ΡΙΝΙΣΜΑΤΑ ΤΟΡΝΕΥΣΗΣ
+            </div>
+          </div>
+
           <div class="cap-tags">
             <span class="cap-tag">Χαλκουργία</span>
             <span class="cap-tag">Νεοτροχόρι</span>
@@ -1230,6 +1259,7 @@
         c3_desc: "Σχεδιασμός αδιαμφισβήτητου κύρους και μαθηματική διάρθρωση των πωλήσεων. Δημιουργούμε διαρκή πίστη πελατών και καταναλωτών στα τοπικά δίκτυα.",
         c4_title: "Αυτοματοποίηση & Βελτιστοποίηση Διαδικασιών",
         c4_desc: "Αναδιοργάνωση και ψηφιακός εκσυγχρονισμός της επικοινωνίας, των παραγγελιών και της εφοδιαστικής αλυσίδας για απρόσκοπτη ροή συναλλαγών.",
+        img_caption: "// ΚΑΤΕΡΓΑΣΙΑ ΟΡΕΙΧΑΛΚΟΥ & ΡΙΝΙΣΜΑΤΑ ΤΟΡΝΕΥΣΗΣ",
         terr_pre: "Περιφερειακη Καληψη",
         terr_title: "Στρατηγικές Επικράτειες Δράσης",
         terr_desc: "Εδραιωμένη παρουσία και αξιόπιστα δίκτυα διανομής που συνδέουν την ιταλική βιομηχανική υπεροχή με στρατηγικούς εταίρους στη Νοτιοανατολική Ευρώπη.",
@@ -1292,6 +1322,7 @@
         c3_desc: "Designing comprehensive brand authority and structuring high-performance sales mechanisms. We build enduring client loyalty and sustained commercial demand across all regional distribution tiers.",
         c4_title: "Process & Workflow Automation",
         c4_desc: "Auditing, structuring, and upgrading order automation, customer communication protocols, and operational workflows for friction-free delivery and account servicing.",
+        img_caption: "// BRASS MACHINING & TURNING SWARF",
         terr_pre: "Regional Coverage",
         terr_title: "Target Strategic Territories",
         terr_desc: "Established presence and regional distribution channels connecting premier Italian industrial manufacturing with trusted commercial partners across Southeastern Europe.",
@@ -1349,11 +1380,12 @@
         c1_title: "R&D Applicato e Ricerca di Mercato",
         c1_desc: "Studi rigorosi di fattibilità e validazione tecnica che collegano le capacità produttive dell'officina direttamente alla domanda effettiva della regione.",
         c2_title: "Fonderie, Rame & Rettifiche Meccaniche",
-        c2_desc: "Rappresentanza storica e pluridecennale di primarie industrie manifatturiere italiane attive nelle lavorazioni in rame, trafilerie, mole abrasive e stampaggio ottoni.",
+        c2_desc: "Rappresentanza storica e pluridecennale di primarie industrie manifatturiere italiane attive nelle lavorazioni in rame, tornerie, mole abrasive e stampaggio ottoni.",
         c3_title: "Identità di Marchio & Sistemi di Vendita",
         c3_desc: "Progettazione dell'autorevolezza del brand e strutturazione di reti di vendita ad alte prestazioni, garantendo continuità di ordini e fedeltà a tutti i livelli distributivi.",
         c4_title: "Ottimizzazione dei Processi & Workflow",
         c4_desc: "Revisione, strutturazione e aggiornamento dell'automazione degli ordini, dei protocolli di comunicazione e dei flussi logistici per un servizio privo di attriti.",
+        img_caption: "// LAVORAZIONE OTTONE E TRUCIOLI DI TORNITURA",
         terr_pre: "Copertura Regionale",
         terr_title: "Territori Strategici",
         terr_desc: "Presenza consolidata e canali commerciali radicati che collegano l'industria manifatturiera italiana con partner fidati in tutto il Sud-Est Europa.",
@@ -1389,7 +1421,6 @@
       });
       document.documentElement.lang = lang === 'gr' ? 'el' : lang;
 
-      // Update SVG Labels
       const svgT1 = document.getElementById('svg-t1');
       const svgT2 = document.getElementById('svg-t2');
       const svgT3 = document.getElementById('svg-t3');
