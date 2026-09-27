@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pamfylos Ltd | Strategic Market Engineering & Brand Architecture</title>
-  <meta name="description" content="50+ years of Italian industrial manufacturing representation. We engineer brand authority and design resilient sales ecosystems across South-Eastern Europe." />
+  <title>Pamfylos Ltd | Στρατηγική Μηχανική Αγοράς & Βιομηχανική Αντιπροσώπευση</title>
+  <meta name="description" content="Πάνω από 50 έτη βιομηχανικής υπεροχής. Συνδυάζουμε την επιστήμη της μηχανικής, τον ορθό λόγο και τη στρατηγική αρχιτεκτονική πωλήσεων σε Ελλάδα, Κύπρο και Αλβανία." />
   
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
@@ -25,6 +25,7 @@
       --accent-copper-hover: #F97316;
       --accent-gold: #E5A93C;
       --accent-cyan: #38BDF8;
+      --accent-green: #10B981;
       --text-main: #F3F4F6;
       --text-muted: #94A3B8;
       --text-dim: #64748B;
@@ -48,11 +49,11 @@
       scroll-behavior: smooth;
     }
 
-    /* Ambient Blueprint Grid */
+    /* Ambient Blueprint & Financial Grid Pattern */
     .blueprint-bg {
       background-image: 
-        radial-gradient(circle at 100% 0%, rgba(217, 119, 54, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 0% 50%, rgba(229, 169, 60, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 100% 0%, rgba(217, 119, 54, 0.09) 0%, transparent 40%),
+        radial-gradient(circle at 0% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 45%),
         linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
@@ -123,7 +124,7 @@
     .brand-name span {
       color: var(--accent-copper);
       font-weight: 400;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       letter-spacing: 2px;
       display: block;
       margin-top: -3px;
@@ -132,14 +133,14 @@
     nav ul {
       display: flex;
       list-style: none;
-      gap: 28px;
+      gap: 26px;
       align-items: center;
     }
 
     nav a {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       font-weight: 500;
       letter-spacing: 0.5px;
       transition: color 0.25s ease;
@@ -163,9 +164,9 @@
       background: none;
       border: none;
       color: var(--text-muted);
-      padding: 5px 12px;
+      padding: 5px 10px;
       border-radius: 16px;
-      font-size: 0.8rem;
+      font-size: 0.76rem;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s;
@@ -177,7 +178,6 @@
       box-shadow: 0 2px 8px rgba(217, 119, 54, 0.4);
     }
 
-    /* Standard Container */
     .container {
       max-width: var(--container-max);
       margin: 0 auto;
@@ -200,7 +200,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.18fr 0.82fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 60px;
       align-items: center;
     }
@@ -215,16 +215,16 @@
       border: 1px solid rgba(217, 119, 54, 0.35);
       color: var(--accent-copper);
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       margin-bottom: 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
     .hero-title {
-      font-size: 3.3rem;
+      font-size: 3.2rem;
       font-weight: 800;
-      line-height: 1.15;
+      line-height: 1.16;
       letter-spacing: -0.02em;
       margin-bottom: 20px;
       color: #FFFFFF;
@@ -237,16 +237,17 @@
     }
 
     .hero-manifesto {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 600;
       color: var(--accent-gold);
       margin-bottom: 20px;
       letter-spacing: 0.5px;
-      line-height: 1.4;
+      line-height: 1.5;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     .hero-description {
-      font-size: 1.08rem;
+      font-size: 1.05rem;
       color: var(--text-muted);
       line-height: 1.7;
       margin-bottom: 36px;
@@ -286,24 +287,23 @@
       box-shadow: 0 6px 24px rgba(217, 119, 54, 0.45);
     }
 
-    .btn-outline-deck {
-      border: 1px solid rgba(229, 169, 60, 0.4);
-      background: rgba(229, 169, 60, 0.08);
-      color: var(--accent-gold);
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
     }
 
-    .btn-outline-deck:hover {
-      background: rgba(229, 169, 60, 0.16);
-      border-color: var(--accent-gold);
-      transform: translateY(-2px);
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
-    /* Hero Tech Visual Card */
+    /* Technical Card */
     .hero-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 16px;
-      padding: 32px;
+      padding: 28px;
       position: relative;
       overflow: hidden;
       backdrop-filter: blur(20px);
@@ -317,31 +317,42 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--accent-copper), var(--accent-gold));
+      background: linear-gradient(90deg, var(--accent-copper), var(--accent-cyan));
     }
 
     .card-meta {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 16px;
-      margin-bottom: 24px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-dim);
+    }
+
+    .engineering-visual {
+      width: 100%;
+      height: 140px;
+      margin-bottom: 20px;
+      background: rgba(9, 13, 20, 0.6);
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      padding: 10px;
+      position: relative;
     }
 
     .metrics-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      gap: 16px;
     }
 
     .metric-box {
       background: rgba(15, 23, 42, 0.6);
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
-      padding: 18px;
+      padding: 16px;
       transition: all 0.3s;
     }
 
@@ -350,11 +361,11 @@
     }
 
     .metric-number {
-      font-size: 2.1rem;
+      font-size: 2rem;
       font-weight: 800;
       color: #fff;
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .metric-number span {
@@ -362,13 +373,13 @@
     }
 
     .metric-label {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.8px;
     }
 
-    /* Section Headings */
+    /* Headings */
     .section-head {
       text-align: center;
       max-width: 820px;
@@ -386,7 +397,7 @@
     }
 
     .section-title {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       font-weight: 800;
       color: #fff;
       margin-bottom: 16px;
@@ -398,12 +409,12 @@
       font-size: 1.05rem;
     }
 
-    /* Strategic Vision Banner */
+    /* Philosophy Banner */
     .philosophy-banner {
       background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
       border: 1px solid var(--border-highlight);
       border-radius: 16px;
-      padding: 44px;
+      padding: 40px;
       margin-bottom: 40px;
       position: relative;
     }
@@ -421,65 +432,96 @@
 
     .philosophy-banner p {
       color: var(--text-muted);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       line-height: 1.75;
       max-width: 950px;
     }
 
-    /* 3 Pillars Grid */
-    .bridge-section {
+    /* 4-Stage Architecture Grid */
+    .framework-section {
       background: rgba(15, 23, 42, 0.4);
       border-top: 1px solid var(--border-subtle);
       border-bottom: 1px solid var(--border-subtle);
     }
 
-    .bridge-grid {
+    .framework-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .bridge-item {
+    .framework-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 36px 28px;
+      padding: 28px 22px;
       position: relative;
-      transition: transform 0.3s, border-color 0.3s;
+      transition: all 0.3s;
     }
 
-    .bridge-item:hover {
-      transform: translateY(-5px);
-      border-color: var(--border-highlight);
+    .framework-card:hover {
+      border-color: var(--accent-copper);
+      transform: translateY(-4px);
     }
 
-    .bridge-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 10px;
-      background: rgba(217, 119, 54, 0.12);
+    .stage-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
       color: var(--accent-copper);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      margin-bottom: 22px;
+      background: rgba(217, 119, 54, 0.1);
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 14px;
+      text-transform: uppercase;
     }
 
-    .bridge-item h3 {
-      font-size: 1.25rem;
+    .framework-card h3 {
+      font-size: 1.15rem;
       color: #fff;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       font-weight: 700;
     }
 
-    .bridge-item p {
+    .framework-card p {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 0.9rem;
+      line-height: 1.55;
     }
 
-    /* Capabilities Section */
+    /* Economic Showcase */
+    .economic-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 50px;
+      align-items: center;
+    }
+
+    .economic-graph-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .economic-graph-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .economic-graph-svg {
+      width: 100%;
+      height: 190px;
+    }
+
+    /* Capabilities */
     .capabilities-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -527,7 +569,7 @@
     }
 
     .cap-title {
-      font-size: 1.3rem;
+      font-size: 1.28rem;
       font-weight: 700;
       color: #fff;
       margin-bottom: 8px;
@@ -562,32 +604,7 @@
       border-color: rgba(229, 169, 60, 0.3);
     }
 
-    /* Deck Banner Section */
-    .deck-banner {
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
-      border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 36px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 50px;
-      gap: 30px;
-    }
-
-    .deck-banner-text h3 {
-      font-size: 1.35rem;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-    .deck-banner-text p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      max-width: 650px;
-    }
-
-    /* Territory Grid Section */
+    /* Territories */
     .territory-section {
       background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.9) 0%, var(--bg-dark) 100%);
       border-top: 1px solid var(--border-subtle);
@@ -596,15 +613,15 @@
 
     .territory-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
     }
 
     .territory-box {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 30px 24px;
+      padding: 34px 24px;
       text-align: center;
       transition: all 0.3s;
     }
@@ -615,13 +632,13 @@
     }
 
     .territory-flag {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin-bottom: 12px;
       display: block;
     }
 
     .territory-name {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: #fff;
       margin-bottom: 6px;
@@ -635,7 +652,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* Contact Section */
+    /* Contact */
     .contact-container {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
@@ -748,38 +765,37 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Mobile Responsive */
+    /* Mobile */
     @media (max-width: 992px) {
-      .hero-grid, .contact-container, .capabilities-grid {
+      .hero-grid, .contact-container, .capabilities-grid, .economic-showcase {
         grid-template-columns: 1fr;
         gap: 40px;
       }
-      .bridge-grid {
-        grid-template-columns: 1fr;
-      }
-      .deck-banner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .territory-grid {
+      .framework-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .territory-grid {
+        grid-template-columns: 1fr;
+      }
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
       }
       nav ul {
         display: none;
       }
     }
     @media (max-width: 600px) {
-      .territory-grid {
+      .framework-grid {
         grid-template-columns: 1fr;
       }
       .metrics-grid {
         grid-template-columns: 1fr;
       }
-      .philosophy-banner {
-        padding: 28px 20px;
+      .lang-switcher {
+        margin-left: 8px;
+      }
+      .lang-btn {
+        padding: 4px 7px;
       }
     }
   </style>
@@ -797,23 +813,24 @@
         </div>
         <div class="brand-name">
           PAMFYLOS
-          <span data-i18n="tagline">ENGINEERING & INDUSTRIAL VENTURES</span>
+          <span data-i18n="tagline">ΕΠΙΣΤΗΜΗ ΜΗΧΑΝΙΚΗΣ & ΒΙΟΜΗΧΑΝΙΚΗ ΑΝΑΠΤΥΞΗ</span>
         </div>
       </a>
 
       <nav>
         <ul>
-          <li><a href="#philosophy" data-i18n="nav_philosophy">Strategic Vision</a></li>
-          <li><a href="#engineering" data-i18n="nav_engineering">Methodology</a></li>
-          <li><a href="#capabilities" data-i18n="nav_capabilities">Capabilities</a></li>
-          <li><a href="#territories" data-i18n="nav_territories">Territories</a></li>
-          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="#philosophy" data-i18n="nav_philosophy">Στρατηγική Αρχή</a></li>
+          <li><a href="#architecture" data-i18n="nav_framework">Αρχιτεκτονική Πλάνου</a></li>
+          <li><a href="#capabilities" data-i18n="nav_capabilities">Πεδία Δράσης</a></li>
+          <li><a href="#territories" data-i18n="nav_territories">Επικράτειες</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Επικοινωνία</a></li>
         </ul>
       </nav>
 
-      <!-- Language Selector -->
+      <!-- Language Selector: GR / EN / IT -->
       <div class="lang-switcher">
-        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn active" onclick="switchLanguage('gr')">GR</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
         <button class="lang-btn" onclick="switchLanguage('it')">IT</button>
       </div>
     </div>
@@ -825,52 +842,76 @@
       <div>
         <div class="hero-badge">
           <i class="fa-solid fa-compass-drafting"></i>
-          <span data-i18n="hero_badge">50+ Years Industrial Heritage</span>
+          <span data-i18n="hero_badge">50+ Ετη Βιομηχανικης Υπεροχης</span>
         </div>
         <h1 class="hero-title">
-          <span class="highlight" data-i18n="hero_title_1">The Science of Engineering.</span><br />
-          <span data-i18n="hero_title_2">Strategic Commercial Systems.</span>
+          <span class="highlight" data-i18n="hero_title_1">Η Επιστήμη της Μηχανικής.</span><br />
+          <span data-i18n="hero_title_2">Ορθολογικά Εμπορικά Συστήματα.</span>
         </h1>
         <div class="hero-manifesto" data-i18n="hero_manifesto">
-          Dedicated to Your Brand Distinction // Calculated Sales Architecture
+          ΑΦΟΣΙΩΜΕΝΟΙ ΣΤΟ ΚΥΡΟΣ ΤΟΥ BRAND ΣΑΣ // ΜΑΘΗΜΑΤΙΚΑ ΔΟΜΗΜΕΝΗ ΑΡΧΙΤΕΚΤΟΝΙΚΗ ΠΩΛΗΣΕΩΝ
         </div>
         <p class="hero-description" data-i18n="hero_description">
-          We combine mathematical precision, industrial discipline, and rational market analysis. We specialize in engineering your brand authority and building structured, resilient sales ecosystems across South-Eastern Europe—fostering enduring personal alliances with primary decision-makers.
+          Συνδυάζουμε τη μαθηματική αυστηρότητα, τη βαθιά βιομηχανική εμπειρία και την ορθολογική ανάλυση της αγοράς. Εξειδικευόμαστε στη θεμελίωση του εταιρικού σας κύρους και στην οικοδόμηση ανθεκτικών εμπορικών μηχανισμών σε Ελλάδα, Κύπρο και Αλβανία—καλλιεργώντας διαρκείς προσωπικές σχέσεις με τους πραγματικούς φορείς λήψης αποφάσεων.
         </p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">
-            <span data-i18n="hero_btn_contact">Initiate Consultation</span>
+            <span data-i18n="hero_btn_contact">Έναρξη Συνεργασίας</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="#contact" class="btn btn-outline-deck" onclick="selectDeckInquiry()">
-            <i class="fa-solid fa-file-powerpoint"></i>
-            <span data-i18n="hero_btn_deck">Request Company Deck (PPT)</span>
+          <a href="#architecture" class="btn btn-secondary">
+            <span data-i18n="hero_btn_arch">Ανάλυση Πλαισίου</span>
           </a>
         </div>
       </div>
 
-      <!-- Live Dashboard / Technical Credibility Box -->
+      <!-- Technical Card with Live Engineering & Analytics Vector Graphics -->
       <div class="hero-card">
         <div class="card-meta">
-          <span>PAMFYLOS CORE // METRICS</span>
+          <span>PAMFYLOS SYSTEM MODEL // STRUCTURAL METRICS</span>
           <span>CY-HE-326717</span>
         </div>
+
+        <!-- SVG Technical Engineering Diagram -->
+        <div class="engineering-visual">
+          <svg viewBox="0 0 400 120" width="100%" height="100%" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="curveGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/>
+                <stop offset="50%" stop-color="#D97736" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#10B981" stop-opacity="1"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="30" x2="400" y2="30" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+            <line x1="0" y1="60" x2="400" y2="60" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+            <line x1="0" y1="90" x2="400" y2="90" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+            <path d="M 10,105 Q 110,95 190,55 T 390,20" fill="none" stroke="url(#curveGradient)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 10,105 Q 110,95 190,55 T 390,20 L 390,115 L 10,115 Z" fill="url(#curveGradient)" opacity="0.12"/>
+            <circle cx="10" cy="105" r="4" fill="#38BDF8"/>
+            <circle cx="190" cy="55" r="4" fill="#D97736"/>
+            <circle cx="390" cy="20" r="5" fill="#10B981"/>
+            <text x="25" y="102" fill="#64748B" font-size="9" font-family="JetBrains Mono" id="svg-t1">R&D PARAMETERS</text>
+            <text x="180" y="42" fill="#D97736" font-size="9" font-family="JetBrains Mono" id="svg-t2">MARKET RETENTION</text>
+            <text x="300" y="18" fill="#10B981" font-size="9" font-family="JetBrains Mono" id="svg-t3">SUSTAINED YIELD</text>
+          </svg>
+        </div>
+
         <div class="metrics-grid">
           <div class="metric-box">
             <span class="metric-number">50<span>+</span></span>
-            <span class="metric-label" data-i18n="m_years">Years Industrial Synergy</span>
+            <span class="metric-label" data-i18n="m_years">Έτη Βιομηχανικής Εμπειρίας</span>
           </div>
           <div class="metric-box">
-            <span class="metric-number">4</span>
-            <span class="metric-label" data-i18n="m_territories">Territories (CY, GR, AL, RS)</span>
+            <span class="metric-number">3</span>
+            <span class="metric-label" data-i18n="m_territories">Επικράτειες (CY, GR, AL)</span>
           </div>
           <div class="metric-box">
             <span class="metric-number">100<span>%</span></span>
-            <span class="metric-label" data-i18n="m_accuracy">Direct Decision Makers</span>
+            <span class="metric-label" data-i18n="m_accuracy">Άμεσοι Φορείς Αποφάσεων</span>
           </div>
           <div class="metric-box">
             <span class="metric-number">B2B</span>
-            <span class="metric-label" data-i18n="m_future">Societal Alignment</span>
+            <span class="metric-label" data-i18n="m_future">Κοινωνική Εναρμόνιση</span>
           </div>
         </div>
       </div>
@@ -881,40 +922,76 @@
   <section id="philosophy" style="padding-bottom: 20px;">
     <div class="container">
       <div class="philosophy-banner">
-        <h3 data-i18n="phil_title">Dedicated to <span>Your Enduring Market Standing</span></h3>
+        <h3 data-i18n="phil_title">Αφοσιωμένοι στη <span>Διαχρονική Καταξίωση της Επιχείρησής Σας</span></h3>
         <p data-i18n="phil_desc">
-          True commercial success is built on alignment and lasting trust. Our mandate is to cultivate real market depth, dedicated client relationships, and loyal consumer adoption for your enterprise. We achieve this by formulating disciplined strategic programs tailored to the unique social, historical, and anthropological fabric of each regional territory—acting through established, personal, and trusted relationships with the individuals who genuinely hold decision-making authority.
+          Η πραγματική εμπορική ισχύς δεν εξαντλείται σε ευκαιριακές διαμεσολαβήσεις. Αποστολή μας είναι η διαμόρφωση ουσιαστικού βάθους αγοράς, αφοσιωμένων δικτύων πελατών και πιστών καταναλωτών για την επιχείρησή σας. Αυτό επιτυγχάνεται μέσω στρατηγικών σχεδίων άρτια βαθμονομημένων στις ιδιαίτερες κοινωνικές, ιστορικές και ανθρωπολογικές παραμέτρους κάθε τοπικής κοινωνίας—δρώντας μέσω στοχευμένων, προσωπικών και διαρκών σχέσεων με εκείνους που πραγματικά κατέχουν την ευθύνη των αποφάσεων.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- The Engineering Bridge -->
-  <section id="engineering" class="bridge-section">
+  <!-- Business Plan & Engineering Architecture Framework -->
+  <section id="architecture" class="framework-section">
     <div class="container">
       <div class="section-head">
-        <span class="section-pretitle" data-i18n="bridge_pre">Methodology & Execution</span>
-        <h2 class="section-title" data-i18n="bridge_title">Rational Logic & Engineering Discipline in Commerce</h2>
-        <p class="section-desc" data-i18n="bridge_desc">
-          Engineering is more than mechanical expertise—it is the disciplined application of structured reasoning. We channel that analytical precision directly into brand positioning, sales engine structuring, and long-term customer allegiance.
+        <span class="section-pretitle" data-i18n="arch_pre">Συστηματικη Μεθοδολογια</span>
+        <h2 class="section-title" data-i18n="arch_title">Αρχιτεκτονική Επιχειρησιακού Πλάνου 4 Σταδίων</h2>
+        <p class="section-desc" data-i18n="arch_desc">
+          Ένας αυστηρά δομημένος οδικός χάρτης που συνδέει τη μηχανική επιστήμη με τον οικονομικό υπολογισμό, διασφαλίζοντας προβλέψιμη διείσδυση και διατηρησιμότητα.
         </p>
       </div>
 
-      <div class="bridge-grid">
-        <div class="bridge-item">
-          <div class="bridge-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-          <h3 data-i18n="b1_title">Engineering Discipline</h3>
-          <p data-i18n="b1_desc">Every market positioning begins with structural analysis, verified industrial standards, and plant-level mechanical understanding.</p>
+      <div class="framework-grid">
+        <div class="framework-card">
+          <span class="stage-badge">ΣΤΑΔΙΟ 01 // ΔΙΑΓΝΩΣΗ</span>
+          <h3 data-i18n="f1_title">Μηχανικός Έλεγχος & Σκοπιμότητα</h3>
+          <p data-i18n="f1_desc">Πλήρης αξιολόγηση τεχνικών προδιαγραφών, μεταλλουργικών ανοχών και βιομηχανικής δυναμικότητας πριν την ανάπτυξη εμπορικού κεφαλαίου.</p>
         </div>
-        <div class="bridge-item">
-          <div class="bridge-icon"><i class="fa-solid fa-users-gear"></i></div>
-          <h3 data-i18n="b2_title">Societal Adaptation</h3>
-          <p data-i18n="b2_desc">Recognizing that commerce is deeply human. We calibrate brand value and sales systems to the cultural, economic, and institutional specifics of each jurisdiction.</p>
+        <div class="framework-card">
+          <span class="stage-badge">ΣΤΑΔΙΟ 02 // ΤΟΠΟΘΕΤΗΣΗ</span>
+          <h3 data-i18n="f2_title">Αρχιτεκτονική Κύρους Brand</h3>
+          <p data-i18n="f2_desc">Θεμελίωση αδιαμφισβήτητου εταιρικού κύρους. Μετουσίωση της κατασκευαστικής τελειότητας σε αναγνωρίσιμη υπεραξία για τα περιφερειακά δίκτυα.</p>
         </div>
-        <div class="bridge-item">
-          <div class="bridge-icon"><i class="fa-solid fa-handshake"></i></div>
-          <h3 data-i18n="b3_title">Key Decision Makers</h3>
-          <p data-i18n="b3_desc">We foster direct, trusted, and unmediated access to corporate leadership and senior executives who govern procurement and strategic growth.</p>
+        <div class="framework-card">
+          <span class="stage-badge">ΣΤΑΔΙΟ 03 // ΠΡΟΣΑΡΜΟΓΗ</span>
+          <h3 data-i18n="f3_title">Κοινωνική & Εμπορική Βαθμονόμηση</h3>
+          <p data-i18n="f3_desc">Προσαρμογή τιμολογιακής πολιτικής, εφοδιαστικής αλυσίδας και συμβατικών πλαισίων στις ιδιαίτερες θεσμικές συνθήκες κάθε αγοράς.</p>
+        </div>
+        <div class="framework-card">
+          <span class="stage-badge">ΣΤΑΔΙΟ 04 // ΑΠΟΔΟΣΗ</span>
+          <h3 data-i18n="f4_title">Μηχανισμός Αποφάσεων Κορυφής</h3>
+          <p data-i18n="f4_desc">Απευθείας διαπραγμάτευση με διευθυντές προμηθειών και εκτελεστικούς επικεφαλής για τη δημιουργία σταθερών επαναλαμβανόμενων παραγγελιών.</p>
+        </div>
+      </div>
+
+      <!-- Economic Showcase Visualization -->
+      <div class="economic-showcase">
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 12px; color: #fff;" data-i18n="econ_title">Οικονομική Διάσταση Θεμελιωμένη στη Διατηρησιμότητα</h3>
+          <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;" data-i18n="econ_desc">
+            Αντί να εναποθέτουμε την επιτυχία σε ευμετάβλητες συναλλαγές, το οικονομικό μας πλάνο εδράζεται στη διαχρονική αξία του πελάτη (Lifetime Value). Μέσω της βαθιάς εναρμόνισης με την τοπική αγορά, μετατρέπουμε τη βιομηχανική παραγωγή σε προβλέψιμες, σταθερά αυξανόμενες ροές εσόδων.
+          </p>
+        </div>
+        <div class="economic-graph-box">
+          <div class="economic-graph-header">
+            <span>ΑΠΟΔΟΣΗ ΕΠΙΧΕΙΡΗΣΙΑΚΟΥ ΜΟΝΤΕΛΟΥ (CAGR & RETENTION)</span>
+            <span style="color: var(--accent-green);"><i class="fa-solid fa-arrow-trend-up"></i> ΒΙΩΣΙΜΟ</span>
+          </div>
+          <!-- Vector Business Chart -->
+          <svg class="economic-graph-svg" viewBox="0 0 360 160">
+            <rect x="30" y="100" width="28" height="50" fill="rgba(217, 119, 54, 0.2)" rx="3"/>
+            <rect x="90" y="80" width="28" height="70" fill="rgba(217, 119, 54, 0.35)" rx="3"/>
+            <rect x="150" y="60" width="28" height="90" fill="rgba(217, 119, 54, 0.55)" rx="3"/>
+            <rect x="210" y="42" width="28" height="108" fill="rgba(217, 119, 54, 0.75)" rx="3"/>
+            <rect x="270" y="24" width="28" height="126" fill="var(--accent-copper)" rx="3"/>
+            <path d="M 44,95 L 104,75 L 164,55 L 224,38 L 284,18" fill="none" stroke="#10B981" stroke-width="2.5"/>
+            <circle cx="284" cy="18" r="4.5" fill="#10B981"/>
+            <text x="32" y="157" fill="#64748B" font-size="9" font-family="JetBrains Mono">ΕΤΟΣ-1</text>
+            <text x="92" y="157" fill="#64748B" font-size="9" font-family="JetBrains Mono">ΕΤΟΣ-2</text>
+            <text x="152" y="157" fill="#64748B" font-size="9" font-family="JetBrains Mono">ΕΤΟΣ-3</text>
+            <text x="212" y="157" fill="#64748B" font-size="9" font-family="JetBrains Mono">ΕΤΟΣ-4</text>
+            <text x="272" y="157" fill="#10B981" font-size="9" font-family="JetBrains Mono">ΕΤΟΣ-5</text>
+          </svg>
         </div>
       </div>
     </div>
@@ -924,10 +1001,10 @@
   <section id="capabilities">
     <div class="container">
       <div class="section-head">
-        <span class="section-pretitle" data-i18n="cap_pre">Scope of Engagement</span>
-        <h2 class="section-title" data-i18n="cap_title">Industrial Excellence, Brand Positioning & Sales Design</h2>
+        <span class="section-pretitle" data-i18n="cap_pre">Πεδια Εξειδικευσης</span>
+        <h2 class="section-title" data-i18n="cap_title">Βιομηχανική Υπεροχή, Branding & Συστήματα Πωλήσεων</h2>
         <p class="section-desc" data-i18n="cap_desc">
-          Over five decades representing premier Italian industrial brands, specializing in copper fabrication, grinding mills, brass components, and turnkey commercial ecosystems.
+          Πάνω από πέντε δεκαετίες αδιάλειπτης εκπροσώπησης κορυφαίων ιταλικών οίκων, με εξειδίκευση στον χαλκό, τα νεοτροχόρια, τα ορειχάλκινα εξαρτήματα και τη στρατηγική εμπορική υποστήριξη.
         </p>
       </div>
 
@@ -937,14 +1014,14 @@
           <div class="cap-header">
             <div class="cap-icon"><i class="fa-solid fa-flask-vial"></i></div>
             <div>
-              <h3 class="cap-title" data-i18n="c1_title">Applied R&D & Product Research</h3>
-              <p class="cap-desc" data-i18n="c1_desc">Rigorous market feasibility and technical validation studies that align industrial production capabilities directly with genuine regional market requirements.</p>
+              <h3 class="cap-title" data-i18n="c1_title">Εφαρμοσμένη R&D & Έρευνα Προϊόντος</h3>
+              <p class="cap-desc" data-i18n="c1_desc">Εμπεριστατωμένες μελέτες τεχνικής σκοπιμότητας που διασυνδέουν τη βιομηχανική ικανότητα με την πραγματική απορροφητικότητα της αγοράς.</p>
             </div>
           </div>
           <div class="cap-tags">
-            <span class="cap-tag">Feasibility</span>
-            <span class="cap-tag">Product Engineering</span>
-            <span class="cap-tag">Market Strategy</span>
+            <span class="cap-tag">Μελέτες Σκοπιμότητας</span>
+            <span class="cap-tag">Μηχανική Προϊόντος</span>
+            <span class="cap-tag">Έρευνα Αγοράς</span>
           </div>
         </div>
 
@@ -953,14 +1030,14 @@
           <div class="cap-header">
             <div class="cap-icon"><i class="fa-solid fa-fire-burner"></i></div>
             <div>
-              <h3 class="cap-title" data-i18n="c2_title">Foundry, Copper & Precision Mills</h3>
-              <p class="cap-desc" data-i18n="c2_desc">Historic, multi-decade representation of top-tier Italian manufacturers specializing in copper works, metal turnings, grinding mills (νεοτροχόρι), and brass forgings.</p>
+              <h3 class="cap-title" data-i18n="c2_title">Χυτήρια, Χαλκουργεία & Νεοτροχόρι</h3>
+              <p class="cap-desc" data-i18n="c2_desc">Ιστορική τεχνογνωσία και δεσμοί με κορυφαίες ιταλικές βιομηχανίες κατεργασίας χαλκού, τόρνευσης, ειδικών νεοτροχορίων και ορειχάλκου.</p>
             </div>
           </div>
           <div class="cap-tags">
-            <span class="cap-tag">Copper Works</span>
-            <span class="cap-tag">Grinding Mills</span>
-            <span class="cap-tag">Italian Manufacturing</span>
+            <span class="cap-tag">Χαλκουργία</span>
+            <span class="cap-tag">Νεοτροχόρι</span>
+            <span class="cap-tag">Ιταλική Βιομηχανία</span>
           </div>
         </div>
 
@@ -969,14 +1046,14 @@
           <div class="cap-header">
             <div class="cap-icon gold"><i class="fa-solid fa-network-wired"></i></div>
             <div>
-              <h3 class="cap-title" data-i18n="c3_title">Brand Architecture & Sales Systems</h3>
-              <p class="cap-desc" data-i18n="c3_desc">Designing comprehensive brand authority and structuring high-performance sales mechanisms. We build enduring client loyalty and sustained commercial demand across all regional distribution tiers.</p>
+              <h3 class="cap-title" data-i18n="c3_title">Αρχιτεκτονική Brand & Μηχανισμός Πωλήσεων</h3>
+              <p class="cap-desc" data-i18n="c3_desc">Σχεδιασμός αδιαμφισβήτητου κύρους και μαθηματική διάρθρωση των πωλήσεων. Δημιουργούμε διαρκή πίστη πελατών και καταναλωτών στα τοπικά δίκτυα.</p>
             </div>
           </div>
           <div class="cap-tags">
-            <span class="cap-tag gold-tag">Brand Authority</span>
-            <span class="cap-tag">Sales Engine Architecture</span>
-            <span class="cap-tag">Customer Loyalty</span>
+            <span class="cap-tag gold-tag">Εταιρικό Κύρος</span>
+            <span class="cap-tag">Μηχανή Πωλήσεων</span>
+            <span class="cap-tag">Πιστότητα Πελατών</span>
           </div>
         </div>
 
@@ -985,28 +1062,16 @@
           <div class="cap-header">
             <div class="cap-icon"><i class="fa-solid fa-sliders"></i></div>
             <div>
-              <h3 class="cap-title" data-i18n="c4_title">Process & Workflow Automation</h3>
-              <p class="cap-desc" data-i18n="c4_desc">Auditing, structuring, and upgrading order automation, customer communication protocols, and operational workflows for friction-free delivery and account servicing.</p>
+              <h3 class="cap-title" data-i18n="c4_title">Αυτοματοποίηση & Βελτιστοποίηση Διαδικασιών</h3>
+              <p class="cap-desc" data-i18n="c4_desc">Αναδιοργάνωση και ψηφιακός εκσυγχρονισμός της επικοινωνίας, των παραγγελιών και της εφοδιαστικής αλυσίδας για απρόσκοπτη ροή συναλλαγών.</p>
             </div>
           </div>
           <div class="cap-tags">
-            <span class="cap-tag">Process Optimization</span>
-            <span class="cap-tag">Workflow Automation</span>
-            <span class="cap-tag">Operational Support</span>
+            <span class="cap-tag">Βελτιστοποίηση Ροών</span>
+            <span class="cap-tag">Αυτοματισμοί Διαδικασιών</span>
+            <span class="cap-tag">Επιχειρησιακή Υποστήριξη</span>
           </div>
         </div>
-      </div>
-
-      <!-- Presentation Deck Callout Banner -->
-      <div class="deck-banner">
-        <div class="deck-banner-text">
-          <h3 data-i18n="deck_title">Corporate Introduction Deck (PPT / PDF)</h3>
-          <p data-i18n="deck_desc">Request our official executive presentation detailing Pamfylos Ltd's 50+ year legacy, Italian industrial partnerships, regional infrastructure in the Balkans & Cyprus, and sales engineering frameworks.</p>
-        </div>
-        <a href="#contact" class="btn btn-primary" onclick="selectDeckInquiry()">
-          <i class="fa-solid fa-download"></i>
-          <span data-i18n="deck_btn">Request Presentation</span>
-        </a>
       </div>
     </div>
   </section>
@@ -1015,33 +1080,28 @@
   <section id="territories" class="territory-section">
     <div class="container">
       <div class="section-head">
-        <span class="section-pretitle" data-i18n="terr_pre">Cross-Border Representation</span>
-        <h2 class="section-title" data-i18n="terr_title">Target Strategic Territories</h2>
+        <span class="section-pretitle" data-i18n="terr_pre">Περιφερειακη Καληψη</span>
+        <h2 class="section-title" data-i18n="terr_title">Στρατηγικές Επικράτειες Δράσης</h2>
         <p class="section-desc" data-i18n="terr_desc">
-          Established presence and regional distribution channels connecting premier Italian industrial manufacturing with trusted commercial partners across Southeastern Europe.
+          Εδραιωμένη παρουσία και αξιόπιστα δίκτυα διανομής που συνδέουν την ιταλική βιομηχανική υπεροχή με στρατηγικούς εταίρους στη Νοτιοανατολική Ευρώπη.
         </p>
       </div>
 
       <div class="territory-grid">
         <div class="territory-box">
           <span class="territory-flag">🇨🇾</span>
-          <h3 class="territory-name">Cyprus</h3>
-          <span class="territory-role" data-i18n="t_hq">Corporate Headquarters</span>
+          <h3 class="territory-name">Κύπρος</h3>
+          <span class="territory-role" data-i18n="t_hq">Εταιρική Έδρα</span>
         </div>
         <div class="territory-box">
           <span class="territory-flag">🇬🇷</span>
-          <h3 class="territory-name">Greece</h3>
-          <span class="territory-role" data-i18n="t_hub">Primary Operational Hub</span>
+          <h3 class="territory-name">Ελλάδα</h3>
+          <span class="territory-role" data-i18n="t_hub">Κύριος Επιχειρησιακός Κόμβος</span>
         </div>
         <div class="territory-box">
           <span class="territory-flag">🇦🇱</span>
-          <h3 class="territory-name">Albania</h3>
-          <span class="territory-role" data-i18n="t_dev">Commercial Development</span>
-        </div>
-        <div class="territory-box">
-          <span class="territory-flag">🇷🇸</span>
-          <h3 class="territory-name">Serbia</h3>
-          <span class="territory-role" data-i18n="t_bal">Balkan Industrial Growth</span>
+          <h3 class="territory-name">Αλβανία</h3>
+          <span class="territory-role" data-i18n="t_dev">Στρατηγική Εμπορική Ανάπτυξη</span>
         </div>
       </div>
     </div>
@@ -1051,31 +1111,31 @@
   <section id="contact">
     <div class="container contact-container">
       <div class="contact-info">
-        <span class="section-pretitle" data-i18n="contact_pre">Direct Executive Channel</span>
-        <h3 data-i18n="contact_title">Connect With Our Directorate</h3>
+        <span class="section-pretitle" data-i18n="contact_pre">Απευθειας Διοικητικος Διαυλος</span>
+        <h3 data-i18n="contact_title">Επικοινωνία με τη Διεύθυνση</h3>
         <p style="color: var(--text-muted); line-height: 1.7;" data-i18n="contact_desc">
-          Whether you are an Italian manufacturer seeking committed, high-level representation, or an enterprise requesting our corporate introduction deck, reach out directly to establish personal contact.
+          Είτε εκπροσωπείτε ιταλικό βιομηχανικό οίκο που αναζητά υψηλού επιπέδου εκπροσώπηση σε Ελλάδα, Κύπρο και Αλβανία, είτε επιθυμείτε στρατηγική αναδιάρθρωση του εμπορικού σας δικτύου, επικοινωνήστε απευθείας για τη σύναψη προσωπικής επαφής.
         </p>
 
         <div class="contact-details">
           <div class="contact-item">
             <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
-              <div class="contact-item-title" data-i18n="c_reg">Registered Headquarters</div>
-              <div class="contact-item-value">Greg Tower, Florinis 7, 1065 Nicosia, Cyprus</div>
+              <div class="contact-item-title" data-i18n="c_reg">Επίσημη Καταστατική Έδρα</div>
+              <div class="contact-item-value">Greg Tower, Φλωρίνης 7, 1065 Λευκωσία, Κύπρος</div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon"><i class="fa-solid fa-language"></i></div>
             <div>
-              <div class="contact-item-title" data-i18n="c_lang">Working Languages</div>
-              <div class="contact-item-value">Italiano (IT), English (EN)</div>
+              <div class="contact-item-title" data-i18n="c_lang">Γλώσσες Επικοινωνίας</div>
+              <div class="contact-item-value">Ελληνικά (GR), Italiano (IT), English (EN)</div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon"><i class="fa-solid fa-id-card"></i></div>
             <div>
-              <div class="contact-item-title" data-i18n="c_id">Company Registration</div>
+              <div class="contact-item-title" data-i18n="c_id">Αριθμός Μητρώου Εταιρείας</div>
               <div class="contact-item-value">Pamfylos Ltd // HE 326717</div>
             </div>
           </div>
@@ -1083,30 +1143,30 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="contact-form" onsubmit="event.preventDefault(); alert(currentLang === 'it' ? 'Grazie per la richiesta. La nostra direzione vi contatterà al più presto.' : 'Thank you for your inquiry. Our directorate will review and respond shortly.');">
+      <form class="contact-form" onsubmit="event.preventDefault(); alert(currentLang === 'gr' ? 'Ευχαριστούμε για το μήνυμα. Η διεύθυνση θα επικοινωνήσει άμεσα μαζί σας.' : (currentLang === 'it' ? 'Grazie per il messaggio. La nostra direzione vi contatterà al più presto.' : 'Thank you for your inquiry. Our directorate will review and respond shortly.'));">
         <div class="form-group">
-          <label data-i18n="f_name">Full Name / Organization</label>
-          <input type="text" class="form-control" required placeholder="e.g. Ing. Marco Rossi / Rossi Foundry SRL" />
+          <label data-i18n="f_name">Ονοματεπώνυμο / Επωνυμία Εταιρείας</label>
+          <input type="text" class="form-control" required placeholder="π.χ. Δημήτριος Σκιαδόπουλος / Pamfylos Ltd" />
         </div>
         <div class="form-group">
-          <label data-i18n="f_email">Official Email Address</label>
+          <label data-i18n="f_email">Επίσημο Εταιρικό Email</label>
           <input type="email" class="form-control" required placeholder="name@company.com" />
         </div>
         <div class="form-group">
-          <label data-i18n="f_territory">Inquiry Scope / Target Field</label>
+          <label data-i18n="f_territory">Αντικείμενο Συνεργασίας / Πεδίο Ενδιαφέροντος</label>
           <select class="form-control" id="form-scope">
-            <option value="deck">Request Company Presentation Deck (PPT/PDF)</option>
-            <option value="italy">Italian Industrial Representation</option>
-            <option value="brand">Brand Positioning & Sales Engine Architecture</option>
-            <option value="market">Regional Market Strategy (GR, CY, AL, RS)</option>
+            <option value="italy">Βιομηχανική Αντιπροσώπευση Ιταλικών Οίκων</option>
+            <option value="brand">Αρχιτεκτονική Brand & Σύστημα Πωλήσεων</option>
+            <option value="market">Περιφερειακή Ανάπτυξη (Ελλάδα, Κύπρος, Αλβανία)</option>
+            <option value="commercial">Βελτιστοποίηση Διαδικασιών & Σχέσεις Decision-Makers</option>
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="f_msg">Project Specifications & Scope</label>
-          <textarea class="form-control" id="form-msg" placeholder="Outline your manufacturing profile, territory objectives, or deck request..."></textarea>
+          <label data-i18n="f_msg">Τεχνικές Προδιαγραφές & Πλαίσιο Έργου</label>
+          <textarea class="form-control" id="form-msg" placeholder="Περιγράψτε συνοπτικά τις βιομηχανικές παραμέτρους ή τους επιχειρησιακούς σας στόχους..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%;">
-          <span data-i18n="f_submit">Transmit Inquiry</span>
+          <span data-i18n="f_submit">Αποστολή Ενδιαφέροντος</span>
           <i class="fa-solid fa-paper-plane"></i>
         </button>
       </form>
@@ -1118,43 +1178,109 @@
     <div class="container">
       <div class="footer-bottom">
         <div>&copy; 2026 PAMFYLOS LTD. HE 326717. ALL RIGHTS RESERVED.</div>
-        <div>ENGINEERED SYSTEMS // IT - EN</div>
+        <div>ENGINEERED SYSTEMS // GR - EN - IT</div>
       </div>
     </div>
   </footer>
 
-  <!-- Internationalization (EN / IT) Logic -->
+  <!-- Internationalization (GR / EN / IT) Logic -->
   <script>
     const translations = {
+      gr: {
+        tagline: "ΕΠΙΣΤΗΜΗ ΜΗΧΑΝΙΚΗΣ & ΒΙΟΜΗΧΑΝΙΚΗ ΑΝΑΠΤΥΞΗ",
+        nav_philosophy: "Στρατηγική Αρχή",
+        nav_framework: "Αρχιτεκτονική Πλάνου",
+        nav_capabilities: "Πεδία Δράσης",
+        nav_territories: "Επικράτειες",
+        nav_contact: "Επικοινωνία",
+        hero_badge: "50+ Ετη Βιομηχανικης Υπεροχης",
+        hero_title_1: "Η Επιστήμη της Μηχανικής.",
+        hero_title_2: "Ορθολογικά Εμπορικά Συστήματα.",
+        hero_manifesto: "ΑΦΟΣΙΩΜΕΝΟΙ ΣΤΟ ΚΥΡΟΣ ΤΟΥ BRAND ΣΑΣ // ΜΑΘΗΜΑΤΙΚΑ ΔΟΜΗΜΕΝΗ ΑΡΧΙΤΕΚΤΟΝΙΚΗ ΠΩΛΗΣΕΩΝ",
+        hero_description: "Συνδυάζουμε τη μαθηματική αυστηρότητα, τη βαθιά βιομηχανική εμπειρία και την ορθολογική ανάλυση της αγοράς. Εξειδικευόμαστε στη θεμελίωση του εταιρικού σας κύρους και στην οικοδόμηση ανθεκτικών εμπορικών μηχανισμών σε Ελλάδα, Κύπρο και Αλβανία—καλλιεργώντας διαρκείς προσωπικές σχέσεις με τους πραγματικούς φορείς λήψης αποφάσεων.",
+        hero_btn_contact: "Έναρξη Συνεργασίας",
+        hero_btn_arch: "Ανάλυση Πλαισίου",
+        m_years: "Έτη Βιομηχανικής Εμπειρίας",
+        m_territories: "Επικράτειες (CY, GR, AL)",
+        m_accuracy: "Άμεσοι Φορείς Αποφάσεων",
+        m_future: "Κοινωνική Εναρμόνιση",
+        phil_title: "Αφοσιωμένοι στη <span>Διαχρονική Καταξίωση της Επιχείρησής Σας</span>",
+        phil_desc: "Η πραγματική εμπορική ισχύς δεν εξαντλείται σε ευκαιριακές διαμεσολαβήσεις. Αποστολή μας είναι η διαμόρφωση ουσιαστικού βάθους αγοράς, αφοσιωμένων δικτύων πελατών και πιστών καταναλωτών για την επιχείρησή σας. Αυτό επιτυγχάνεται μέσω στρατηγικών σχεδίων άρτια βαθμονομημένων στις ιδιαίτερες κοινωνικές, ιστορικές και ανθρωπολογικές παραμέτρους κάθε τοπικής κοινωνίας—δρώντας μέσω στοχευμένων, προσωπικών και διαρκών σχέσεων με εκείνους που πραγματικά κατέχουν την ευθύνη των αποφάσεων.",
+        arch_pre: "Συστηματικη Μεθοδολογια",
+        arch_title: "Αρχιτεκτονική Επιχειρησιακού Πλάνου 4 Σταδίων",
+        arch_desc: "Ένας αυστηρά δομημένος οδικός χάρτης που συνδέει τη μηχανική επιστήμη με τον οικονομικό υπολογισμό, διασφαλίζοντας προβλέψιμη διείσδυση και διατηρησιμότητα.",
+        f1_title: "Μηχανικός Έλεγχος & Σκοπιμότητα",
+        f1_desc: "Πλήρης αξιολόγηση τεχνικών προδιαγραφών, μεταλλουργικών ανοχών και βιομηχανικής δυναμικότητας πριν την ανάπτυξη εμπορικού κεφαλαίου.",
+        f2_title: "Αρχιτεκτονική Κύρους Brand",
+        f2_desc: "Θεμελίωση αδιαμφισβήτητου εταιρικού κύρους. Μετουσίωση της κατασκευαστικής τελειότητας σε αναγνωρίσιμη υπεραξία για τα περιφερειακά δίκτυα.",
+        f3_title: "Κοινωνική & Εμπορική Βαθμονόμηση",
+        f3_desc: "Προσαρμογή τιμολογιακής πολιτικής, εφοδιαστικής αλυσίδας και συμβατικών πλαισίων στις ιδιαίτερες θεσμικές συνθήκες κάθε αγοράς.",
+        f4_title: "Μηχανισμός Αποφάσεων Κορυφής",
+        f4_desc: "Απευθείας διαπραγμάτευση με διευθυντές προμηθειών και εκτελεστικούς επικεφαλής για τη δημιουργία σταθερών επαναλαμβανόμενων παραγγελιών.",
+        econ_title: "Οικονομική Διάσταση Θεμελιωμένη στη Διατηρησιμότητα",
+        econ_desc: "Αντί να εναποθέτουμε την επιτυχία σε ευμετάβλητες συναλλαγές, το οικονομικό μας πλάνο εδράζεται στη διαχρονική αξία του πελάτη (Lifetime Value). Μέσω της βαθιάς εναρμόνισης με την τοπική αγορά, μετατρέπουμε τη βιομηχανική παραγωγή σε προβλέψιμες, σταθερά αυξανόμενες ροές εσόδων.",
+        cap_pre: "Πεδια Εξειδικευσης",
+        cap_title: "Βιομηχανική Υπεροχή, Branding & Συστήματα Πωλήσεων",
+        cap_desc: "Πάνω από πέντε δεκαετίες αδιάλειπτης εκπροσώπησης κορυφαίων ιταλικών οίκων, με εξειδίκευση στον χαλκό, τα νεοτροχόρια, τα ορειχάλκινα εξαρτήματα και τη στρατηγική εμπορική υποστήριξη.",
+        c1_title: "Εφαρμοσμένη R&D & Έρευνα Προϊόντος",
+        c1_desc: "Εμπεριστατωμένες μελέτες τεχνικής σκοπιμότητας που διασυνδέουν τη βιομηχανική ικανότητα με την πραγματική απορροφητικότητα της αγοράς.",
+        c2_title: "Χυτήρια, Χαλκουργεία & Νεοτροχόρι",
+        c2_desc: "Ιστορική τεχνογνωσία και δεσμοί με κορυφαίες ιταλικές βιομηχανίες κατεργασίας χαλκού, τόρνευσης, ειδικών νεοτροχορίων και ορειχάλκου.",
+        c3_title: "Αρχιτεκτονική Brand & Μηχανισμός Πωλήσεων",
+        c3_desc: "Σχεδιασμός αδιαμφισβήτητου κύρους και μαθηματική διάρθρωση των πωλήσεων. Δημιουργούμε διαρκή πίστη πελατών και καταναλωτών στα τοπικά δίκτυα.",
+        c4_title: "Αυτοματοποίηση & Βελτιστοποίηση Διαδικασιών",
+        c4_desc: "Αναδιοργάνωση και ψηφιακός εκσυγχρονισμός της επικοινωνίας, των παραγγελιών και της εφοδιαστικής αλυσίδας για απρόσκοπτη ροή συναλλαγών.",
+        terr_pre: "Περιφερειακη Καληψη",
+        terr_title: "Στρατηγικές Επικράτειες Δράσης",
+        terr_desc: "Εδραιωμένη παρουσία και αξιόπιστα δίκτυα διανομής που συνδέουν την ιταλική βιομηχανική υπεροχή με στρατηγικούς εταίρους στη Νοτιοανατολική Ευρώπη.",
+        t_hq: "Εταιρική Έδρα",
+        t_hub: "Κύριος Επιχειρησιακός Κόμβος",
+        t_dev: "Στρατηγική Εμπορική Ανάπτυξη",
+        contact_pre: "Απευθειας Διοικητικος Διαυλος",
+        contact_title: "Επικοινωνία με τη Διεύθυνση",
+        contact_desc: "Είτε εκπροσωπείτε ιταλικό βιομηχανικό οίκο που αναζητά υψηλού επιπέδου εκπροσώπηση σε Ελλάδα, Κύπρο και Αλβανία, είτε επιθυμείτε στρατηγική αναδιάρθρωση του εμπορικού σας δικτύου, επικοινωνήστε απευθείας για τη σύναψη προσωπικής επαφής.",
+        c_reg: "Επίσημη Καταστατική Έδρα",
+        c_lang: "Γλώσσες Επικοινωνίας",
+        c_id: "Αριθμός Μητρώου Εταιρείας",
+        f_name: "Ονοματεπώνυμο / Επωνυμία Εταιρείας",
+        f_email: "Επίσημο Εταιρικό Email",
+        f_territory: "Αντικείμενο Συνεργασίας / Πεδίο Ενδιαφέροντος",
+        f_msg: "Τεχνικές Προδιαγραφές & Πλαίσιο Έργου",
+        f_submit: "Αποστολή Ενδιαφέροντος"
+      },
       en: {
         tagline: "ENGINEERING & INDUSTRIAL VENTURES",
         nav_philosophy: "Strategic Vision",
-        nav_engineering: "Methodology",
+        nav_framework: "Plan Architecture",
         nav_capabilities: "Capabilities",
         nav_territories: "Territories",
         nav_contact: "Contact",
         hero_badge: "50+ Years Industrial Heritage",
         hero_title_1: "The Science of Engineering.",
         hero_title_2: "Strategic Commercial Systems.",
-        hero_manifesto: "Dedicated to Your Brand Distinction // Calculated Sales Architecture",
-        hero_description: "We combine mathematical precision, industrial discipline, and rational market analysis. We specialize in engineering your brand authority and building structured, resilient sales ecosystems across South-Eastern Europe—fostering enduring personal alliances with primary decision-makers.",
+        hero_manifesto: "DEDICATED TO YOUR BRAND DISTINCTION // CALCULATED SALES ARCHITECTURE",
+        hero_description: "We combine mathematical precision, industrial discipline, and rational market analysis. We specialize in engineering your brand authority and building structured, resilient sales ecosystems across Greece, Cyprus, and Albania—fostering enduring personal alliances with primary decision-makers.",
         hero_btn_contact: "Initiate Consultation",
-        hero_btn_deck: "Request Company Deck (PPT)",
+        hero_btn_arch: "Explore Plan Framework",
         m_years: "Years Industrial Synergy",
-        m_territories: "Territories (CY, GR, AL, RS)",
+        m_territories: "Territories (CY, GR, AL)",
         m_accuracy: "Direct Decision Makers",
         m_future: "Societal Alignment",
         phil_title: "Dedicated to <span>Your Enduring Market Standing</span>",
-        phil_desc: "True commercial success is built on alignment and lasting trust. Our mandate is to cultivate real market depth, dedicated client relationships, and loyal consumer adoption for your enterprise. We achieve this by formulating disciplined strategic programs tailored to the unique social, historical, and anthropological fabric of each regional territory—acting through established, personal, and trusted relationships with the individuals who genuinely hold decision-making authority.",
-        bridge_pre: "Methodology & Execution",
-        bridge_title: "Rational Logic & Engineering Discipline in Commerce",
-        bridge_desc: "Engineering is more than mechanical expertise—it is the disciplined application of structured reasoning. We channel that analytical precision directly into brand positioning, sales engine structuring, and long-term customer allegiance.",
-        b1_title: "Engineering Discipline",
-        b1_desc: "Every market positioning begins with structural analysis, verified industrial standards, and plant-level mechanical understanding.",
-        b2_title: "Societal Adaptation",
-        b2_desc: "Recognizing that commerce is deeply human. We calibrate brand value and sales systems to the cultural, economic, and institutional specifics of each jurisdiction.",
-        b3_title: "Key Decision Makers",
-        b3_desc: "We foster direct, trusted, and unmediated access to corporate leadership and senior executives who govern procurement and strategic growth.",
+        phil_desc: "True commercial success is built on mutual alignment and lasting trust. Our mandate is to cultivate real market depth, dedicated client relationships, and loyal consumer adoption for your enterprise. We achieve this by formulating disciplined strategic programs tailored to the unique social, historical, and anthropological fabric of each regional territory—acting through established, personal, and trusted relationships with the individuals who genuinely hold decision-making authority.",
+        arch_pre: "Systematic Execution",
+        arch_title: "The 4-Stage Business & Engineering Framework",
+        arch_desc: "A structured roadmap combining engineering methodology and economic calculation to guarantee predictable market penetration and sustained customer loyalty.",
+        f1_title: "Engineering Audit & Feasibility",
+        f1_desc: "Complete mathematical assessment of product specifications, metallurgical standards, and production line capacities before commercial capital deployment.",
+        f2_title: "Brand Distinction Architecture",
+        f2_desc: "Crafting unassailable corporate authority. Translating mechanical excellence into high-tier brand recognition that regional distributors prioritize.",
+        f3_title: "Societal & Commercial Calibration",
+        f3_desc: "Adapting pricing structures, logistical delivery mechanisms, and commercial contracts to the specific institutional and cultural parameters of each market.",
+        f4_title: "Direct Decision-Maker Engine",
+        f4_desc: "Direct negotiations with procurement directors, founders, and key executive deciders to generate long-term recurring orders and loyal consumer adoption.",
+        econ_title: "Economics Rooted in Predictable Retention",
+        econ_desc: "Rather than relying on volatile, one-off commission models, our business plan methodology is modeled on durable customer lifetime value. By locking in strategic alignment with regional authorities, we transform industrial capacity into predictable, compounding revenue streams.",
         cap_pre: "Scope of Engagement",
         cap_title: "Industrial Excellence, Brand Positioning & Sales Design",
         cap_desc: "Over five decades representing premier Italian industrial brands, specializing in copper fabrication, grinding mills, brass components, and turnkey commercial ecosystems.",
@@ -1166,19 +1292,15 @@
         c3_desc: "Designing comprehensive brand authority and structuring high-performance sales mechanisms. We build enduring client loyalty and sustained commercial demand across all regional distribution tiers.",
         c4_title: "Process & Workflow Automation",
         c4_desc: "Auditing, structuring, and upgrading order automation, customer communication protocols, and operational workflows for friction-free delivery and account servicing.",
-        deck_title: "Corporate Introduction Deck (PPT / PDF)",
-        deck_desc: "Request our official executive presentation detailing Pamfylos Ltd's 50+ year legacy, Italian industrial partnerships, regional infrastructure in the Balkans & Cyprus, and sales engineering frameworks.",
-        deck_btn: "Request Presentation",
-        terr_pre: "Cross-Border Representation",
+        terr_pre: "Regional Coverage",
         terr_title: "Target Strategic Territories",
         terr_desc: "Established presence and regional distribution channels connecting premier Italian industrial manufacturing with trusted commercial partners across Southeastern Europe.",
         t_hq: "Corporate Headquarters",
         t_hub: "Primary Operational Hub",
-        t_dev: "Commercial Development",
-        t_bal: "Balkan Industrial Growth",
+        t_dev: "Strategic Commercial Growth",
         contact_pre: "Direct Executive Channel",
         contact_title: "Connect With Our Directorate",
-        contact_desc: "Whether you are an Italian manufacturer seeking committed, high-level representation, or an enterprise requesting our corporate introduction deck, reach out directly to establish personal contact.",
+        contact_desc: "Whether you are an Italian manufacturer seeking committed, high-level representation in Greece, Cyprus, and Albania, or an enterprise seeking to optimize commercial distribution, reach out directly to establish personal contact.",
         c_reg: "Registered Headquarters",
         c_lang: "Working Languages",
         c_id: "Company Registration",
@@ -1191,32 +1313,36 @@
       it: {
         tagline: "INGEGNERIA E SVILUPPO INDUSTRIALE",
         nav_philosophy: "Visione Strategica",
-        nav_engineering: "Metodologia",
+        nav_framework: "Architettura del Piano",
         nav_capabilities: "Competenze",
         nav_territories: "Territori",
         nav_contact: "Contatto",
         hero_badge: "Oltre 50 Anni di Tradizione Industriale",
         hero_title_1: "La Scienza dell'Ingegneria.",
         hero_title_2: "Sistemi Commerciali Strategici.",
-        hero_manifesto: "Dedicati al Valore del Vostro Brand // Architettura Commerciale Calcolata",
-        hero_description: "Uniamo precisione matematica, disciplina industriale e analisi razionale di mercato. Siamo specializzati nell'ingegnerizzazione dell'autorevolezza del vostro marchio e nella creazione di ecosistemi di vendita solidi nel Sud-Est Europa, coltivando alleanze personali e durature con i principali decisori.",
+        hero_manifesto: "DEDICATI AL VALORE DEL VOSTRO BRAND // ARCHITETTURA COMMERCIALE CALCOLATA",
+        hero_description: "Uniamo precisione matematica, disciplina industriale e analisi razionale di mercato. Siamo specializzati nell'ingegnerizzazione dell'autorevolezza del vostro marchio e nella creazione di ecosistemi di vendita solidi in Grecia, Cipro e Albania, coltivando alleanze personali e durature con i principali decisori.",
         hero_btn_contact: "Avvia Consultazione",
-        hero_btn_deck: "Richiedi Presentazione (PPT)",
+        hero_btn_arch: "Esplora il Modello",
         m_years: "Anni di Sinergia Industriale",
-        m_territories: "Territori (CY, GR, AL, RS)",
+        m_territories: "Territori (CY, GR, AL)",
         m_accuracy: "Decisori Diretti",
         m_future: "Allineamento Sociale",
         phil_title: "Dedicati al <span>Vostro Valore e Riconoscimento nel Tempo</span>",
         phil_desc: "Il vero successo commerciale nasce dalla fiducia condivisa e dall'armonia operativa. Il nostro obiettivo è sviluppare una reale penetrazione di mercato, relazioni stabili con i clienti e una solida base di consumatori per la vostra impresa. Raggiungiamo questo traguardo attraverso piani strategici calibrati sulle dinamiche sociali e storiche di ogni territorio, operando tramite relazioni dirette, riservate e consolidate con chi detiene l'effettivo potere decisionale.",
-        bridge_pre: "Metodologia ed Esecuzione",
-        bridge_title: "Logica Razionale e Disciplina Ingegneristica nel Commercio",
-        bridge_desc: "L'ingegneria non si esaurisce nella perizia meccanica: è l'applicazione del pensiero strutturato. Applichiamo questo rigore direttamente al posizionamento del marchio, all'organizzazione delle reti di vendita e alla fidelizzazione duratura dei clienti.",
-        b1_title: "Disciplina Ingegneristica",
-        b1_desc: "Ogni posizionamento commerciale muove da analisi strutturale, standard tecnici verificati e profonda comprensione dei processi produttivi.",
-        b2_title: "Adattamento Sociale",
-        b2_desc: "Il commercio è un fatto umano. Calibriamo l'identità del marchio e la strategia distributiva sulle specificità culturali, economiche e istituzionali di ciascun Paese.",
-        b3_title: "Relazione con i Decisori",
-        b3_desc: "Costruiamo canali diretti, affidabili e privi di intermediari con i vertici aziendali che gestiscono acquisti e sviluppi strategici.",
+        arch_pre: "Esecuzione Sistematica",
+        arch_title: "Il Framework in 4 Fasi: Ingegneria e Business Plan",
+        arch_desc: "Una metodologia strutturata che unisce rigore ingegneristico e calcolo economico per garantire una penetrazione di mercato prevedibile e una fidelizzazione duratura.",
+        f1_title: "Audit Ingegneristico & Fattibilità",
+        f1_desc: "Valutazione matematica completa delle specifiche di prodotto, degli standard metallurgici e della capacità produttiva prima dell'impiego di risorse commerciali.",
+        f2_title: "Architettura del Marchio",
+        f2_desc: "Creazione di un'autorevolezza aziendale inattaccabile. Traduzione dell'eccellenza meccanica in un posizionamento di prestigio prioritario per i distributori.",
+        f3_title: "Calibrazione Sociale & Commerciale",
+        f3_desc: "Adattamento delle strutture di prezzo, della logistica e della contrattualistica alle peculiarità istituzionali e culturali dei singoli mercati.",
+        f4_title: "Relazione Diretta con i Decisori",
+        f4_desc: "Trattative dirette con direttori acquisti, titolari e dirigenti con reale potere decisionale per generare ordini continuativi e fidelizzazione nel tempo.",
+        econ_title: "Economia Fondata sulla Fidelizzazione Reale",
+        econ_desc: "Superando i modelli instabili basati su singole transazioni, la nostra strategia punta sul valore del cliente nel lungo periodo. Creando un allineamento profondo nei mercati regionali, trasformiamo la capacità industriale in flussi di ricavo solidi e costanti.",
         cap_pre: "Ambiti di Intervento",
         cap_title: "Eccellenza Industriale, Identità di Marchio & Vendite",
         cap_desc: "Oltre cinquant'anni di rappresentanza delle primarie industrie manifatturiere italiane, con competenze su rame, tornerie, rettifiche speciali (mole/νεοτροχόρι), raccorderia e architettura commerciale.",
@@ -1228,19 +1354,15 @@
         c3_desc: "Progettazione dell'autorevolezza del brand e strutturazione di reti di vendita ad alte prestazioni, garantendo continuità di ordini e fedeltà a tutti i livelli distributivi.",
         c4_title: "Ottimizzazione dei Processi & Workflow",
         c4_desc: "Revisione, strutturazione e aggiornamento dell'automazione degli ordini, dei protocolli di comunicazione e dei flussi logistici per un servizio privo di attriti.",
-        deck_title: "Presentazione Aziendale (PPT / PDF)",
-        deck_desc: "Richiedete la presentazione ufficiale che illustra la storia cinquantennale di Pamfylos Ltd, le partnership industriali italiane, la rete nei Balcani e a Cipro e i modelli ingegneristici applicati alle vendite.",
-        deck_btn: "Richiedi Presentazione",
-        terr_pre: "Presenza Sovranazionale",
+        terr_pre: "Copertura Regionale",
         terr_title: "Territori Strategici",
         terr_desc: "Presenza consolidata e canali commerciali radicati che collegano l'industria manifatturiera italiana con partner fidati in tutto il Sud-Est Europa.",
         t_hq: "Sede Legale & Direzione",
         t_hub: "Hub Operativo Principale",
-        t_dev: "Sviluppo Commerciale",
-        t_bal: "Crescita Industriale Balcani",
+        t_dev: "Sviluppo Commerciale Strategico",
         contact_pre: "Canale Direzionale Diretto",
         contact_title: "Contatta la Nostra Direzione",
-        contact_desc: "Che siate un'industria manifatturiera italiana in cerca di una rappresentanza solida e riservata, o un'azienda regionale interessata alla nostra presentazione, contattateci direttamente per stabilire un dialogo personale.",
+        contact_desc: "Che siate un'industria manifatturiera italiana in cerca di una rappresentanza solida in Grecia, Cipro e Albania, o un'azienda interessata a ottimizzare la propria rete, contattateci direttamente per stabilire un dialogo personale.",
         c_reg: "Sede Legale Registrata",
         c_lang: "Lingue Operative",
         c_id: "Numero di Registro",
@@ -1252,7 +1374,7 @@
       }
     };
 
-    let currentLang = 'en';
+    let currentLang = 'gr';
 
     function switchLanguage(lang) {
       currentLang = lang;
@@ -1265,19 +1387,24 @@
           el.innerText = translations[lang][key];
         }
       });
-      document.documentElement.lang = lang;
-    }
+      document.documentElement.lang = lang === 'gr' ? 'el' : lang;
 
-    function selectDeckInquiry() {
-      const select = document.getElementById('form-scope');
-      if (select) {
-        select.value = 'deck';
-      }
-      const msg = document.getElementById('form-msg');
-      if (msg && !msg.value) {
-        msg.value = currentLang === 'it' 
-          ? "Desideriamo ricevere la presentazione aziendale (PPT/PDF)." 
-          : "Please provide the official company presentation deck (PPT/PDF).";
+      // Update SVG Labels
+      const svgT1 = document.getElementById('svg-t1');
+      const svgT2 = document.getElementById('svg-t2');
+      const svgT3 = document.getElementById('svg-t3');
+      if (lang === 'gr') {
+        if (svgT1) svgT1.textContent = "ΠΑΡΑΜΕΤΡΟΙ R&D";
+        if (svgT2) svgT2.textContent = "ΔΙΑΤΗΡΗΣΙΜΟΤΗΤΑ ΑΓΟΡΑΣ";
+        if (svgT3) svgT3.textContent = "ΣΤΑΘΕΡΗ ΑΠΟΔΟΣΗ";
+      } else if (lang === 'it') {
+        if (svgT1) svgT1.textContent = "PARAMETRI R&D";
+        if (svgT2) svgT2.textContent = "RETENTION DI MERCATO";
+        if (svgT3) svgT3.textContent = "RENDIMENTO COSTANTE";
+      } else {
+        if (svgT1) svgT1.textContent = "R&D PARAMETERS";
+        if (svgT2) svgT2.textContent = "MARKET RETENTION";
+        if (svgT3) svgT3.textContent = "SUSTAINED YIELD";
       }
     }
   </script>
