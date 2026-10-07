@@ -8,7 +8,7 @@
   
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
@@ -49,7 +49,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Ambient Blueprint & Financial Grid Pattern */
     .blueprint-bg {
       background-image: 
         radial-gradient(circle at 100% 0%, rgba(217, 119, 54, 0.09) 0%, transparent 40%),
@@ -60,7 +59,6 @@
       background-position: 0 0, 0 0, -1px -1px, -1px -1px;
     }
 
-    /* Header & Navigation */
     header {
       position: fixed;
       top: 0;
@@ -189,7 +187,6 @@
       position: relative;
     }
 
-    /* Hero Section */
     .hero {
       padding-top: calc(var(--nav-height) + 70px);
       padding-bottom: 90px;
@@ -298,7 +295,6 @@
       border-color: rgba(255, 255, 255, 0.2);
     }
 
-    /* Technical Card */
     .hero-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
@@ -379,7 +375,6 @@
       letter-spacing: 0.8px;
     }
 
-    /* Headings */
     .section-head {
       text-align: center;
       max-width: 820px;
@@ -409,7 +404,6 @@
       font-size: 1.05rem;
     }
 
-    /* Philosophy Banner */
     .philosophy-banner {
       background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
       border: 1px solid var(--border-highlight);
@@ -437,7 +431,6 @@
       max-width: 950px;
     }
 
-    /* 4-Stage Architecture Grid */
     .framework-section {
       background: rgba(15, 23, 42, 0.4);
       border-top: 1px solid var(--border-subtle);
@@ -490,7 +483,6 @@
       line-height: 1.55;
     }
 
-    /* Economic Showcase */
     .economic-showcase {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -521,7 +513,6 @@
       height: 190px;
     }
 
-    /* Capabilities */
     .capabilities-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -604,7 +595,6 @@
       border-color: rgba(229, 169, 60, 0.3);
     }
 
-    /* Industrial Foundry Image Showcase */
     .foundry-photo-box {
       margin: 16px 0 20px 0;
       border-radius: 10px;
@@ -639,7 +629,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Territories */
     .territory-section {
       background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.9) 0%, var(--bg-dark) 100%);
       border-top: 1px solid var(--border-subtle);
@@ -687,7 +676,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Contact */
     .contact-container {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
@@ -782,7 +770,6 @@
       min-height: 120px;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid var(--border-subtle);
       background: #06090E;
@@ -800,7 +787,6 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Mobile */
     @media (max-width: 992px) {
       .hero-grid, .contact-container, .capabilities-grid, .economic-showcase {
         grid-template-columns: 1fr;
@@ -907,7 +893,6 @@
           <span>CY-HE-326717</span>
         </div>
 
-        <!-- SVG Technical Engineering Diagram -->
         <div class="engineering-visual">
           <svg viewBox="0 0 400 120" width="100%" height="100%" preserveAspectRatio="none">
             <defs>
@@ -1060,7 +1045,7 @@
           </div>
         </div>
 
-        <!-- 2: Foundry & Industrial Heritage with Original Swarf Photo -->
+        <!-- 2: Foundry & Industrial Heritage with Photo -->
         <div class="cap-card">
           <div class="cap-header">
             <div class="cap-icon"><i class="fa-solid fa-fire-burner"></i></div>
@@ -1070,7 +1055,7 @@
             </div>
           </div>
 
-          <!-- Featured Swarf / Alloy Photo Box (Image URL fallback to brass-swarf.jpg) -->
+          <!-- Featured Swarf / Alloy Photo Box -->
           <div class="foundry-photo-box">
             <img src="brass-swarf.jpg" alt="Brass machining chips and industrial swarf" onerror="this.src='https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80'" />
             <div class="foundry-photo-caption" data-i18n="img_caption">
@@ -1186,33 +1171,34 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <form class="contact-form" onsubmit="event.preventDefault(); alert(currentLang === 'gr' ? 'Ευχαριστούμε για το μήνυμα. Η διεύθυνση θα επικοινωνήσει άμεσα μαζί σας.' : (currentLang === 'it' ? 'Grazie per il messaggio. La nostra direzione vi contatterà al più presto.' : 'Thank you for your inquiry. Our directorate will review and respond shortly.'));">
+      <!-- Functional Formspree AJAX Form -->
+      <form class="contact-form" id="pamfylos-contact-form" action="https://formspree.io/f/xgaoolgw" method="POST">
         <div class="form-group">
           <label data-i18n="f_name">Ονοματεπώνυμο / Επωνυμία Εταιρείας</label>
-          <input type="text" class="form-control" required placeholder="π.χ. Δημήτριος Σκιαδόπουλος / Pamfylos Ltd" />
+          <input type="text" name="name" class="form-control" required placeholder="π.χ. Δημήτριος Σκιαδόπουλος / Pamfylos Ltd" />
         </div>
         <div class="form-group">
           <label data-i18n="f_email">Επίσημο Εταιρικό Email</label>
-          <input type="email" class="form-control" required placeholder="name@company.com" />
+          <input type="email" name="email" class="form-control" required placeholder="name@company.com" />
         </div>
         <div class="form-group">
           <label data-i18n="f_territory">Αντικείμενο Συνεργασίας / Πεδίο Ενδιαφέροντος</label>
-          <select class="form-control" id="form-scope">
-            <option value="italy">Βιομηχανική Αντιπροσώπευση Ιταλικών Οίκων</option>
-            <option value="brand">Αρχιτεκτονική Brand & Σύστημα Πωλήσεων</option>
-            <option value="market">Περιφερειακή Ανάπτυξη (Ελλάδα, Κύπρος, Αλβανία)</option>
-            <option value="commercial">Βελτιστοποίηση Διαδικασιών & Σχέσεις Decision-Makers</option>
+          <select class="form-control" name="scope" id="form-scope">
+            <option value="Industrial Representation">Βιομηχανική Αντιπροσώπευση Ιταλικών Οίκων</option>
+            <option value="Brand Architecture & Sales">Αρχιτεκτονική Brand & Σύστημα Πωλήσεων</option>
+            <option value="Regional Market Strategy">Περιφερειακή Ανάπτυξη (Ελλάδα, Κύπρος, Αλβανία)</option>
+            <option value="Decision-Maker Relations">Βελτιστοποίηση Διαδικασιών & Σχέσεις Decision-Makers</option>
           </select>
         </div>
         <div class="form-group">
           <label data-i18n="f_msg">Τεχνικές Προδιαγραφές & Πλαίσιο Έργου</label>
-          <textarea class="form-control" id="form-msg" placeholder="Περιγράψτε συνοπτικά τις βιομηχανικές παραμέτρους ή τους επιχειρησιακούς σας στόχους..."></textarea>
+          <textarea class="form-control" name="message" id="form-msg" required placeholder="Περιγράψτε συνοπτικά τις βιομηχανικές παραμέτρους ή τους επιχειρησιακούς σας στόχους..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">
+        <button type="submit" id="form-submit-btn" class="btn btn-primary" style="width: 100%;">
           <span data-i18n="f_submit">Αποστολή Ενδιαφέροντος</span>
           <i class="fa-solid fa-paper-plane"></i>
         </button>
+        <div id="form-status" style="margin-top: 15px; font-size: 0.9rem; text-align: center; display: none;"></div>
       </form>
     </div>
   </section>
@@ -1227,7 +1213,7 @@
     </div>
   </footer>
 
-  <!-- Internationalization (GR / EN / IT) Logic -->
+  <!-- Internationalization (GR / EN / IT) Logic & Formspree Handling -->
   <script>
     const translations = {
       gr: {
@@ -1436,7 +1422,6 @@
       });
       document.documentElement.lang = lang === 'gr' ? 'el' : lang;
 
-      // Update SVG Labels
       const svgT1 = document.getElementById('svg-t1');
       const svgT2 = document.getElementById('svg-t2');
       const svgT3 = document.getElementById('svg-t3');
@@ -1453,6 +1438,51 @@
         if (svgT2) svgT2.textContent = "MARKET RETENTION";
         if (svgT3) svgT3.textContent = "SUSTAINED YIELD";
       }
+    }
+
+    // Formspree AJAX Handler
+    const contactForm = document.getElementById('pamfylos-contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = document.getElementById('form-submit-btn');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+
+        const data = new FormData(contactForm);
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            formStatus.style.display = 'block';
+            formStatus.style.color = '#10B981';
+            formStatus.textContent = currentLang === 'gr' 
+              ? '✓ Το μήνυμά σας απεστάλη επιτυχώς. Η διεύθυνση θα επικοινωνήσει άμεσα μαζί σας.' 
+              : (currentLang === 'it' 
+                ? '✓ Messaggio inviato con successo. La nostra direzione vi contatterà a breve.' 
+                : '✓ Message sent successfully. Our directorate will respond shortly.');
+            contactForm.reset();
+          } else {
+            const errData = await response.json();
+            throw new Error(errData.errors ? errData.errors.map(err => err.message).join(', ') : 'Σφάλμα κατά την αποστολή.');
+          }
+        } catch (error) {
+          formStatus.style.display = 'block';
+          formStatus.style.color = '#EF4444';
+          formStatus.textContent = currentLang === 'gr' 
+            ? 'Παρουσιάστηκε σφάλμα κατά την αποστολή. Παρακαλούμε δοκιμάστε ξανά.' 
+            : 'An error occurred during submission. Please try again.';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+        }
+      });
     }
   </script>
 </body>
