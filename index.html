@@ -1155,6 +1155,13 @@
             </div>
           </div>
           <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-item-title">Email</div>
+              <div class="contact-item-value"><a href="mailto:info@pamfylosltd.com.cy" style="color: inherit;">info@pamfylosltd.com.cy</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
             <div class="contact-icon"><i class="fa-solid fa-language"></i></div>
             <div>
               <div class="contact-item-title" data-i18n="c_lang">Γλώσσες Επικοινωνίας</div>
@@ -1173,6 +1180,7 @@
 
       <!-- Functional Formspree AJAX Form -->
       <form class="contact-form" id="pamfylos-contact-form" action="https://formspree.io/f/xgaoolgw" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from pamfylosltd.com.cy website" />
         <div class="form-group">
           <label data-i18n="f_name">Ονοματεπώνυμο / Επωνυμία Εταιρείας</label>
           <input type="text" name="name" class="form-control" required placeholder="π.χ. Δημήτριος Σκιαδόπουλος / Pamfylos Ltd" />
@@ -1475,9 +1483,12 @@
         } catch (error) {
           formStatus.style.display = 'block';
           formStatus.style.color = '#EF4444';
-          formStatus.textContent = currentLang === 'gr' 
-            ? 'Παρουσιάστηκε σφάλμα κατά την αποστολή. Παρακαλούμε δοκιμάστε ξανά.' 
-            : 'An error occurred during submission. Please try again.';
+          const mailLink = '<a href="mailto:info@pamfylosltd.com.cy" style="color: inherit; text-decoration: underline;">info@pamfylosltd.com.cy</a>';
+          formStatus.innerHTML = currentLang === 'gr'
+            ? 'Παρουσιάστηκε σφάλμα κατά την αποστολή. Παρακαλούμε δοκιμάστε ξανά ή στείλτε email στο ' + mailLink + '.'
+            : (currentLang === 'it'
+              ? 'Si è verificato un errore durante l\'invio. Riprovate o scrivete a ' + mailLink + '.'
+              : 'An error occurred during submission. Please try again or email ' + mailLink + '.');
         } finally {
           submitBtn.disabled = false;
           submitBtn.style.opacity = '1';
